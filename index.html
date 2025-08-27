@@ -14,35 +14,37 @@
      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body class="font-inter max-w-[1640px] mx-auto ">
-    <nav class="flex justify-between items-center px-10 py-5">
+    <nav class="flex justify-between items-center sm:px-10 px-3 py-5 ">
         <div class="flex items-center">
-            <img src="assets/logo.png" alt="logo" class="w-[50px]">
-            <h1 class="text-[#006747] font-bold ml-2 text-xl">Emergency <br> Service</h1>
+            <img src="assets/logo.png" alt="logo" class="md:w-[50px] w-[30px]">
+            <h1 class="text-[#006747] font-bold ml-2 md:text-xl text-sm">Emergency <br> Service</h1>
         </div>
-        <div class="flex justify-between items-center gap-5">
-            <div class="flex items-center gap-2 bg-[#41ff6b1a] px-[24px] py-[12px] rounded-3xl">
-            <span>0</span>
+        <div class="flex justify-between items-center lg:gap-5  gap-2">
+            <div class="flex items-center gap-2 bg-[#41ff6b1a] md:px-[24px] md:py-[12px] px-3 py-1 rounded-3xl">
+            <span>100</span>
             <img src="assets/heart.png" alt="" class="w-[20px]">
             </div>
-            <div class="flex items-center gap-2 bg-[#1038e91a] px-[24px] py-[12px] rounded-4xl">
+            <div class="flex items-center gap-2 bg-[#41ff6b1a] md:px-[24px] md:py-[12px] px-3 py-1 rounded-4xl">
                 <span>100</span> 
                 <img src="assets/coin.png" alt="" class="w-[20px]"></div>
-            <div class=" bg-[#00a63e] px-[36px] py-[12px] text-white rounded-3xl">0 Copy</div>
+            <div class=" bg-[#00a63e] md:px-[36px] md:py-[12px] px-3 py-1 text-white rounded-3xl"><p>0 Copy</p></div>
         </div>
         
     </nav>
 
-    <!-- banner section  -->
-     <div class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] py-6">
-        <img src="assets/logo-dark.png" class="w-[92px] h-[92px] mx-auto" alt="">
-        <h1 class="text-center text-[40px] text-white font-bold">Emergency Service Directory</h1>
-        <p class="text-center text-white pt-4 font-semibold">Government Emergency Services at Your Fingertip - A Project by Government of the People's Republic of Bangladesh</p>
-     </div>
+
+
+     <!-- banner section   -->
+    <div class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] py-6">
+        <img src="assets/logo-dark.png" class="lg:w-[92px] lg:h-[92px] md:w-[70px] md:h-[70px] w-[60px] h-[60px]   mx-auto" alt="logo">
+        <h1 class="text-center lg:pt-0 pt-1 md:text-[40px] text-white font-bold">Emergency Service Directory</h1>
+        <p class="text-center text-white lg:pt-1 pt-3 font-semibold text-[13px] md:text-[16px] px-2 sm:px-10">Government Emergency Services at Your Fingertip - A Project by Government of the People's Republic of Bangladesh</p>
+    </div>
 
 
      <!-- card section  -->
-      <section class="bg-[#f5fff6] px-10 flex gap- py-10">
-      <div class="grid grid-cols-3 gap-8 w-[1240px]  mr-10"> 
+    <section class="bg-[#f5fff6] px-10 flex lg:flex-row flex-col gap- py-10">
+      <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8  lg:mr-10"> 
            <div class="p-8 bg-[#ffffff] shadow-xl rounded-2xl">
                 <div class="flex justify-between items-center ">
                     <span class="bg-[#ffe3e2] p-4 rounded-2xl"><img src="assets/emergency.png" alt="" class="w-[32px] h-[32px]"></span>
@@ -51,10 +53,10 @@
                     </span>
                 </div>   
                 <div>
-                    <h1 class="font-bold pt-3 text-[20px]">National Emergency Number</h1>
-                    <p class="pb-6 text-[18px]">Nation Emergency</p>
-                    <p class="font-bold text-[32px]">999</p>
-                    <p class="bg-[#f2f2f2] p-2 w-[50px] text-center rounded-3xl mt-2 mb-5 text-[18px]">All</p>
+                    <h1 class="font-bold pt-3 sm:text-[20px]">National Emergency Number</h1>
+                    <p class="pb-6 sm:text-[18px]">Nation Emergency</p>
+                    <p class="font-bold sm:text-[32px]">999</p>
+                    <p class="bg-[#f2f2f2] p-2 w-[50px] text-center rounded-3xl mt-2 mb-5 sm:text-[18px]">All</p>
                 </div>
                 
                 <div class=" flex gap-2 ">
@@ -76,10 +78,10 @@
                     </span>
                 </div>   
                 <div>
-                    <h1 class="font-bold pt-3 text-[20px]">Police Helpline Number</h1>
-                    <p class="pb-6 text-[18px]">Police </p>
-                    <p class="font-bold text-[32px]">999</p>
-                    <p class="bg-[#f2f2f2] p-2 w-[80px] text-center rounded-3xl mt-2 mb-5 text-[18px]">Police </p>
+                    <h1 class="font-bold pt-3 sm:text-[20px]">Police Helpline Number</h1>
+                    <p class="pb-6 sm:text-[18px]">Police </p>
+                    <p class="font-bold sm:text-[32px]">999</p>
+                    <p class="bg-[#f2f2f2] p-2 w-[80px] text-center rounded-3xl mt-2 mb-5 md:text-[18px]">Police </p>
                 </div>
                 
                 <div class=" flex gap-2 ">
@@ -103,10 +105,10 @@
                     </span>
                 </div>   
                 <div>
-                    <h1 class="font-bold pt-3 text-[20px]">Fire Service Number</h1>
-                    <p class="pb-6 text-[18px]">Fire Service</p>
-                    <p class="font-bold text-[32px]">999</p>
-                    <p class="bg-[#f2f2f2] p-2 w-[50px] text-center rounded-3xl mt-2 mb-5 text-[18px]">Fire</p>
+                    <h1 class="font-bold pt-3 sm:text-[20px]">Fire Service Number</h1>
+                    <p class="pb-6 sm:text-[18px]">Fire Service</p>
+                    <p class="font-bold sm:text-[32px]">999</p>
+                    <p class="bg-[#f2f2f2] p-2 w-[50px] text-center rounded-3xl mt-2 mb-5 sm:text-[18px]">Fire</p>
                 </div>
                 
                 <div class=" flex gap-2 ">
@@ -129,10 +131,10 @@
                     </span>
                 </div>   
                 <div>
-                    <h1 class="font-bold pt-3 text-[20px]">Ambulance Service</h1>
-                    <p class="pb-6 text-[18px]">Ambulance </p>
-                    <p class="font-bold text-[32px]">1994-999999</p>
-                    <p class="bg-[#f2f2f2] p-2 w-[80px] text-center rounded-3xl mt-2 mb-5 text-[18px]">health</p>
+                    <h1 class="font-bold pt-3 sm:text-[20px]">Ambulance Service</h1>
+                    <p class="pb-6 sm:text-[18px]">Ambulance </p>
+                    <p class="font-bold sm:text-[32px]">1994-999999</p>
+                    <p class="bg-[#f2f2f2] p-2 w-[80px] text-center rounded-3xl mt-2 mb-5 sm:text-[18px]">health</p>
                 </div>
                 
                 <div class=" flex gap-2 ">
@@ -155,10 +157,10 @@
                     </span>
                 </div>   
                 <div>
-                    <h1 class="font-bold pt-3 text-[20px]">Women & Child Helpline</h1>
-                    <p class="pb-6 text-[18px]">Women & Child Helpline</p>
-                    <p class="font-bold text-[32px]">109</p>
-                    <p class="bg-[#f2f2f2] p-2 w-[60px] text-center rounded-3xl mt-2 mb-5 text-[18px]">Help</p>
+                    <h1 class="font-bold pt-3 sm:text-[20px]">Women & Child Helpline</h1>
+                    <p class="pb-6 sm:text-[18px]">Women & Child Helpline</p>
+                    <p class="font-bold sm:text-[32px]">109</p>
+                    <p class="bg-[#f2f2f2] p-2 w-[60px] text-center rounded-3xl mt-2 mb-5 sm:text-[18px]">Help</p>
                 </div>
                 
                 <div class=" flex gap-2 ">
@@ -181,10 +183,10 @@
                     </span>
                 </div>   
                 <div>
-                    <h1 class="font-bold pt-3 text-[20px]">Anti-Corruption Helpline</h1>
-                    <p class="pb-6 text-[18px]">Anti-Corruption</p>
-                    <p class="font-bold text-[32px]">106</p>
-                    <p class="bg-[#f2f2f2] p-2 w-[70px] text-center rounded-3xl mt-2 mb-5 text-[18px]">Govt.</p>
+                    <h1 class="font-bold pt-3 sm:text-[20px]">Anti-Corruption Helpline</h1>
+                    <p class="pb-6 sm:text-[18px]">Anti-Corruption</p>
+                    <p class="font-bold sm:text-[32px]">106</p>
+                    <p class="bg-[#f2f2f2] p-2 w-[70px] text-center rounded-3xl mt-2 mb-5 sm:text-[18px]">Govt.</p>
                 </div>
                 
                 <div class=" flex gap-2 ">
@@ -207,10 +209,10 @@
                     </span>
                 </div>   
                 <div>
-                    <h1 class="font-bold pt-3 text-[20px]">Electricity Helpline</h1>
-                    <p class="pb-6 text-[18px]">Electricity Outage</p>
-                    <p class="font-bold text-[32px]">16216</p>
-                    <p class="bg-[#f2f2f2] p-2 w-[100px] text-center rounded-3xl mt-2 mb-5 text-[18px]">Electricity</p>
+                    <h1 class="font-bold pt-3 sm:text-[20px]">Electricity Helpline</h1>
+                    <p class="pb-6 sm:text-[18px]">Electricity Outage</p>
+                    <p class="font-bold sm:text-[32px]">16216</p>
+                    <p class="bg-[#f2f2f2] p-2 w-[100px] text-center rounded-3xl mt-2 mb-5 sm:text-[18px]">Electricity</p>
                 </div>
                 
                 <div class=" flex gap-2 ">
@@ -233,10 +235,10 @@
                     </span>
                 </div>   
                 <div>
-                    <h1 class="font-bold pt-3 text-[20px]">Brac Helpline</h1>
-                    <p class="pb-6 text-[18px]">Brac</p>
-                    <p class="font-bold text-[32px]">16445</p>
-                    <p class="bg-[#f2f2f2] p-2 w-[50px] text-center rounded-3xl mt-2 mb-5 text-[18px]">All</p>
+                    <h1 class="font-bold pt-3 sm:text-[20px]">Brac Helpline</h1>
+                    <p class="pb-6 sm:text-[18px]">Brac</p>
+                    <p class="font-bold sm:text-[32px]">16445</p>
+                    <p class="bg-[#f2f2f2] p-2 w-[50px] text-center rounded-3xl mt-2 mb-5 sm:text-[18px]">All</p>
                 </div>
                 
                 <div class=" flex gap-2 ">
@@ -259,10 +261,10 @@
                     </span>
                 </div>   
                 <div>
-                    <h1 class="font-bold pt-3 text-[20px]">Bangladesh RailWay Helpline</h1>
+                    <h1 class="font-bold pt-3 sm:text-[20px]">Bangladesh RailWay Helpline</h1>
                     <p class="pb-6 text-[18px]">Bangladesh Railway</p>
-                    <p class="font-bold text-[32px]">163</p>
-                    <p class="bg-[#f2f2f2] p-2 w-[80px] text-center rounded-3xl mt-2 mb-5 text-[18px]">Travel</p>
+                    <p class="font-bold sm:text-[32px]">163</p>
+                    <p class="bg-[#f2f2f2] p-2 w-[80px] text-center rounded-3xl mt-2 mb-5 sm:text-[18px]">Travel</p>
                 </div>
                 
                 <div class=" flex gap-2 ">
@@ -276,11 +278,10 @@
             
             </div>
          
-
       </div>
 
 
-    <div class="py-10 px-4 rounded-2xl w-[400px] border-green-400 bg-[#ffffff]">
+    <div class="py-10 px-4 mt-10 rounded-2xl lg:w-[400px] border-green-400 bg-[#ffffff] shadow-xl">
           <div class= " flex justify-between items-center gap-[30px]">
         <div class="text-[20px] text-[#111111]"><i class="fa-regular fa-clock"></i> <span >Call history</span> </div>
         <div>
@@ -288,28 +289,16 @@
         </div>
       </div>
       <div class="p-3 text-[18px] rounded-2xl flex justify-between items-center bg-[#fafafa] my-4">
-        <div>
+        <div class="text-[14px] sm:text-[18px]">
             <h1 class=" font-semibold text-[#111111]">Fire Service Number</h1>
             <p>999</p>
         </div>
-        <div>
+        <div class="text-[14px sm:text-[18px]">
             <p>11:36:58 AM</p>
         </div>
-      </div>
-    
-      <div class="p-3 text-[18px] rounded-2xl flex justify-between items-center bg-[#fafafa] my-4">
-        <div>
-            <h1 class=" font-semibold text-[#111111]">Fire Service Number</h1>
-            <p>999</p>
-        </div>
-        <div>
-            <p>11:36:58 AM</p>
-        </div>
-      </div>
-    
-       
+      </div>    
        
     </div>
-         </section>
-</body>
+    </section>
+</body> 
 </html>     

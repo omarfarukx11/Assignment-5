@@ -1,6 +1,3 @@
-const historySection = [];
-
-
 const loveIcons = document.getElementsByClassName('love')
 const loveQuantityElement = document.getElementById('love-quantity')
 let loveQuantity = parseInt(loveQuantityElement.innerText)
@@ -12,25 +9,7 @@ for (const love of loveIcons){
 }
 
 
-
-
-// const callButton = document.getElementsByClassName('call-button')
-// const serviceNames = document.getElementsByClassName('service-name')
-// const serviceNumbers = document.getElementsByClassName('service-number')
-
-// function toggleHandle (id){
-//     for(const button of callButton){
-//     button.addEventListener('click', function(){
-//         for(const serviceName of serviceNames){
-//             return serviceName.innerText
-//         }
-//         for(const serviceNumber of serviceNumbers){
-//             return serviceNumber.innerText
-//         }
-//          const onlyText = document.getElementById(id).innerText
-//     })
-// }
-// }
+const historySection = [];
 
 function getInnerText (id){
     const innerTextIs = document.getElementById(id).innerText
@@ -90,9 +69,159 @@ historySection.push(history)
 historyOfCall()
 })
 
+document.getElementById('fire-s-button').addEventListener('click', function(){
+const serviceName = getInnerText('fire-service')
+const serviceNumber = getInnerText('fire-s-Number')
+const coin = getInnerTextValue('coin')
+const newCoin = coin - 20;
+if(coin < 20){
+    alert("You Do Not Have Enough Balance. You Will Need At least 20 Coins To Make A Call")
+    return
+}
+const result = "calling " + serviceName + " " + serviceNumber+'...'
+alert(result)  
+setInnerText(newCoin)
 
+const history = {
+    serviceName: serviceName,
+    serviceNumber:serviceNumber,
+    date:new Date().toLocaleTimeString()
+}
+historySection.push(history)
+historyOfCall()
+})
 
+document.getElementById('ambulance-button').addEventListener('click', function(){
+const serviceName = getInnerText('ambulance-service')
+const serviceNumber = getInnerText('ambulance-number')
+const coin = getInnerTextValue('coin')
+const newCoin = coin - 20;
+if(coin < 20){
+    alert("You Do Not Have Enough Balance. You Will Need At least 20 Coins To Make A Call")
+    return
+}
+const result = "calling " + serviceName + " " + serviceNumber+'...'
+alert(result)  
+setInnerText(newCoin)
 
+const history = {
+    serviceName: serviceName,
+    serviceNumber:serviceNumber,
+    date:new Date().toLocaleTimeString()
+}
+historySection.push(history)
+historyOfCall()
+})
+
+document.getElementById('women-button').addEventListener('click', function(){
+const serviceName = getInnerText('women-helpline')
+const serviceNumber = getInnerText('women-helpline-Number')
+const coin = getInnerTextValue('coin')
+const newCoin = coin - 20;
+if(coin < 20){
+    alert("You Do Not Have Enough Balance. You Will Need At least 20 Coins To Make A Call")
+    return
+}
+const result = "calling " + serviceName + " " + serviceNumber+'...'
+alert(result)  
+setInnerText(newCoin)
+
+const history = {
+    serviceName: serviceName,
+    serviceNumber:serviceNumber,
+    date:new Date().toLocaleTimeString()
+}
+historySection.push(history)
+historyOfCall()
+})
+
+document.getElementById('anti-corruption-button').addEventListener('click', function(){
+const serviceName = getInnerText('anti-corruption')
+const serviceNumber = getInnerText('anti-corruption-Number')
+const coin = getInnerTextValue('coin')
+const newCoin = coin - 20;
+if(coin < 20){
+    alert("You Do Not Have Enough Balance. You Will Need At least 20 Coins To Make A Call")
+    return
+}
+const result = "calling " + serviceName + " " + serviceNumber+'...'
+alert(result)  
+setInnerText(newCoin)
+
+const history = {
+    serviceName: serviceName,
+    serviceNumber:serviceNumber,
+    date:new Date().toLocaleTimeString()
+}
+historySection.push(history)
+historyOfCall()
+})
+
+document.getElementById('electricity-h-button').addEventListener('click', function(){
+const serviceName = getInnerText('electricity-helpline')
+const serviceNumber = getInnerText('electricity-helpline-Number')
+const coin = getInnerTextValue('coin')
+const newCoin = coin - 20;
+if(coin < 20){
+    alert("You Do Not Have Enough Balance. You Will Need At least 20 Coins To Make A Call")
+    return
+}
+const result = "calling " + serviceName + " " + serviceNumber+'...'
+alert(result)  
+setInnerText(newCoin)
+
+const history = {
+    serviceName: serviceName,
+    serviceNumber:serviceNumber,
+    date:new Date().toLocaleTimeString()
+}
+historySection.push(history)
+historyOfCall()
+})
+
+document.getElementById('brac-h-button').addEventListener('click', function(){
+const serviceName = getInnerText('brac')
+const serviceNumber = getInnerText('brac-Number')
+const coin = getInnerTextValue('coin')
+const newCoin = coin - 20;
+if(coin < 20){
+    alert("You Do Not Have Enough Balance. You Will Need At least 20 Coins To Make A Call")
+    return
+}
+const result = "calling " + serviceName + " " + serviceNumber+'...'
+alert(result)  
+setInnerText(newCoin)
+
+const history = {
+    serviceName: serviceName,
+    serviceNumber:serviceNumber,
+    date:new Date().toLocaleTimeString()
+}
+historySection.push(history)
+historyOfCall()
+})
+
+document.getElementById('railway-button').addEventListener('click', function(){
+const serviceName = getInnerText('bd-railway')
+const serviceNumber = getInnerText('bd-railway-Number')
+const coin = getInnerTextValue('coin')
+const newCoin = coin - 20;
+if(coin < 20){
+    alert("You Do Not Have Enough Balance. You Will Need At least 20 Coins To Make A Call")
+    return
+}
+const result = "calling " + serviceName + " " + serviceNumber+'...'
+alert(result)  
+setInnerText(newCoin)
+
+const history = {
+    serviceName: serviceName,
+    serviceNumber:serviceNumber,
+    date:new Date().toLocaleTimeString()
+}
+historySection.push(history)
+historyOfCall()
+})
 
 
 function historyOfCall (){
@@ -115,16 +244,3 @@ for(const history of historySection){
     historyContainer.appendChild(div)
 }
 }
-
-
-// for(const button of callButton){
-//     button.addEventListener('click', function(){
-//         for(const serviceName of serviceNames){
-//             alert(serviceName.innerText)
-//         }
-//         for(const serviceNumber of serviceNumbers){
-//             console.log(serviceNumber.innerText)
-//         }
-//     })
-// }
-

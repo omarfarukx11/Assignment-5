@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emergency Hotline </title>
     <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body class="max-w-[1640px] mx-auto ">
@@ -21,7 +22,7 @@
             <div class="flex items-center gap-2 bg-[#41ff6b1a] md:px-[24px] md:py-[12px] px-3 py-1 rounded-4xl">
                 <span id="coin">100</span> 
                 <img src="assets/coin.png" alt="" class="w-[20px]"></div>
-            <div class=" bg-[#00a63e] md:px-[36px] md:py-[12px] px-3 py-1 text-white rounded-3xl"><p>0 Copy</p></div>
+            <div  class=" bg-[#00a63e] md:px-[36px] md:py-[12px] px-3 py-1 text-white rounded-3xl"><p><span id="copy-quantity">0</span> Copy</p></div>
         </div>
         
     </nav>
@@ -54,7 +55,7 @@
                 </div>
                 
                 <div class=" flex gap-2 ">
-                    <div class="w-[100%] border-1 border-gray-300 bg-[#ffffff] flex items-center justify-center py-2 rounded-lg"><button><i class="fa-regular fa-copy"></i> Copy</button>
+                    <div id="national-copy-button" class="copy-buttons w-[100%] border-1 border-gray-300 bg-[#ffffff] flex items-center justify-center py-2 rounded-lg"><button><i class="fa-regular fa-copy"></i> Copy</button>
                     </div>
 
                     <div id="national-e-button" class=" bg-[#00a63e]  w-[100%] flex items-center justify-center  py-2 text-white rounded-lg">
@@ -74,16 +75,16 @@
                 <div>
                     <h1 class="font-bold pt-3 sm:text-[20px]">Police Helpline Number</h1>
                     <p id="police" class=" pb-6 sm:text-[18px]">Police </p>
-                    <p id="police-Number" class=" font-bold sm:text-[32px]">999</p>
+                    <p id="police-Number" class="service-number font-bold sm:text-[32px]">999</p>
                     <p class="bg-[#f2f2f2] p-2 w-[80px] text-center rounded-3xl mt-2 mb-5 md:text-[18px]">Police </p>
                 </div>
                 
                 <div class=" flex gap-2 ">
-                    <div class="w-[100%] border-1 border-gray-300 bg-[#ffffff] flex items-center justify-center py-2 rounded-lg"><button><i class="fa-regular fa-copy"></i> Copy</button>
+                    <div id="police-copy-btn" class="copy-buttons w-[100%] border-1 border-gray-300 bg-[#ffffff] flex items-center justify-center py-2 rounded-lg"><button><i class="fa-regular fa-copy"></i> Copy</button>
                     </div>
 
                     <div id="police-button" class=" bg-[#00a63e]  w-[100%] flex items-center justify-center  py-2 text-white rounded-lg">
-                        <button> <i class="fa-solid fa-phone"></i> Call</button></div>
+                    <button> <i class="fa-solid fa-phone"></i> Call</button></div>
                 </div>
             
             </div>
@@ -99,12 +100,12 @@
                 <div>
                     <h1 class="font-bold pt-3 sm:text-[20px]">Fire Service Number</h1>
                     <p id="fire-service" class=" pb-6 sm:text-[18px]">Fire Service</p>
-                    <p id="fire-s-Number" class="font-bold sm:text-[32px]">999</p>
+                    <p id="fire-s-Number" class="service-number font-bold sm:text-[32px]">999</p>
                     <p class="bg-[#f2f2f2] p-2 w-[50px] text-center rounded-3xl mt-2 mb-5 sm:text-[18px]">Fire</p>
                 </div>
                 
                 <div class=" flex gap-2 ">
-                    <div class="w-[100%] border-1 border-gray-300 bg-[#ffffff] flex items-center justify-center py-2 rounded-lg"><button><i class="fa-regular fa-copy"></i> Copy</button>
+                    <div id="fire-service-copy-btn" class="copy-buttons w-[100%] border-1 border-gray-300 bg-[#ffffff] flex items-center justify-center py-2 rounded-lg"><button><i class="fa-regular fa-copy"></i> Copy</button>
                     </div>
 
                     <div id="fire-s-button" class="bg-[#00a63e]  w-[100%] flex items-center justify-center  py-2 text-white rounded-lg">
@@ -124,12 +125,12 @@
                 <div>
                     <h1 class="font-bold pt-3 sm:text-[20px]">Ambulance Service</h1>
                     <p id="ambulance-service" class=" pb-6 sm:text-[18px]">Ambulance </p>
-                    <p id="ambulance-number" class=" font-bold sm:text-[32px]">1994-999999</p>
+                    <p id="ambulance-number" class="service-number  font-bold sm:text-[32px]">1994-999999</p>
                     <p class="bg-[#f2f2f2] p-2 w-[80px] text-center rounded-3xl mt-2 mb-5 sm:text-[18px]">health</p>
                 </div>
                 
                 <div class=" flex gap-2 ">
-                    <div class="w-[100%] border-1 border-gray-300 bg-[#ffffff] flex items-center justify-center py-2 rounded-lg"><button><i class="fa-regular fa-copy"></i> Copy</button>
+                    <div id="ambulance-copy-btn" class="copy-buttons w-[100%] border-1 border-gray-300 bg-[#ffffff] flex items-center justify-center py-2 rounded-lg"><button><i class="fa-regular fa-copy"></i> Copy</button>
                     </div>
 
                     <div id="ambulance-button" class=" bg-[#00a63e]  w-[100%] flex items-center justify-center  py-2 text-white rounded-lg">
@@ -149,12 +150,12 @@
                 <div>
                     <h1 class="font-bold pt-3 sm:text-[20px]">Women & Child Helpline</h1>
                     <p id="women-helpline" class="pb-6 sm:text-[18px]">Women & Child Helpline</p>
-                    <p id="women-helpline-Number" class="font-bold sm:text-[32px]">109</p>
+                    <p id="women-helpline-Number" class="service-number font-bold sm:text-[32px]">109</p>
                     <p class="bg-[#f2f2f2] p-2 w-[60px] text-center rounded-3xl mt-2 mb-5 sm:text-[18px]">Help</p>
                 </div>
                 
                 <div class=" flex gap-2 ">
-                    <div class="w-[100%] border-1 border-gray-300 bg-[#ffffff] flex items-center justify-center py-2 rounded-lg"><button><i class="fa-regular fa-copy"></i> Copy</button>
+                    <div id="women-copy-btn" class="copy-buttons w-[100%] border-1 border-gray-300 bg-[#ffffff] flex items-center justify-center py-2 rounded-lg"><button><i class="fa-regular fa-copy"></i> Copy</button>
                     </div>
 
                     <div id="women-button" class=" bg-[#00a63e]  w-[100%] flex items-center justify-center  py-2 text-white rounded-lg">
@@ -174,12 +175,12 @@
                 <div>
                     <h1 class="font-bold pt-3 sm:text-[20px]">Anti-Corruption Helpline</h1>
                     <p id="anti-corruption" class=" pb-6 sm:text-[18px]">Anti-Corruption</p>
-                    <p id="anti-corruption-Number" class=" font-bold sm:text-[32px]">106</p>
+                    <p id="anti-corruption-Number" class="service-number  font-bold sm:text-[32px]">106</p>
                     <p class="bg-[#f2f2f2] p-2 w-[70px] text-center rounded-3xl mt-2 mb-5 sm:text-[18px]">Govt.</p>
                 </div>
                 
                 <div class=" flex gap-2 ">
-                    <div class="w-[100%] border-1 border-gray-300 bg-[#ffffff] flex items-center justify-center py-2 rounded-lg"><button><i class="fa-regular fa-copy"></i> Copy</button>
+                    <div id="anti-copy-btn" class="copy-buttons w-[100%] border-1 border-gray-300 bg-[#ffffff] flex items-center justify-center py-2 rounded-lg"><button><i class="fa-regular fa-copy"></i> Copy</button>
                     </div>
 
                     <div id="anti-corruption-button" class="bg-[#00a63e]  w-[100%] flex items-center justify-center  py-2 text-white rounded-lg">
@@ -199,12 +200,12 @@
                 <div>
                     <h1 class="font-bold pt-3 sm:text-[20px]">Electricity Helpline</h1>
                     <p id="electricity-helpline" class=" pb-6 sm:text-[18px]">Electricity Outage</p>
-                    <p id="electricity-helpline-Number" class=" font-bold sm:text-[32px]">16216</p>
+                    <p id="electricity-helpline-Number" class="service-number  font-bold sm:text-[32px]">16216</p>
                     <p class="bg-[#f2f2f2] p-2 w-[100px] text-center rounded-3xl mt-2 mb-5 sm:text-[18px]">Electricity</p>
                 </div>
                 
                 <div class=" flex gap-2 ">
-                    <div class="w-[100%] border-1 border-gray-300 bg-[#ffffff] flex items-center justify-center py-2 rounded-lg"><button><i class="fa-regular fa-copy"></i> Copy</button>
+                    <div id="electricity-copy-btn" class="copy-buttons w-[100%] border-1 border-gray-300 bg-[#ffffff] flex items-center justify-center py-2 rounded-lg"><button><i class="fa-regular fa-copy"></i> Copy</button>
                     </div>
 
                     <div id="electricity-h-button" class="bg-[#00a63e]  w-[100%] flex items-center justify-center  py-2 text-white rounded-lg">
@@ -226,12 +227,12 @@
                     <p id="brac" class="pb-6 sm:text-[18px]">Brac
 
                     </p>
-                    <p id="brac-Number" class=" font-bold sm:text-[32px]">16445</p>
+                    <p id="brac-Number" class="service-number  font-bold sm:text-[32px]">16445</p>
                     <p class="bg-[#f2f2f2] p-2 w-[50px] text-center rounded-3xl mt-2 mb-5 sm:text-[18px]">All</p>
                 </div>
                 
                 <div class=" flex gap-2 ">
-                    <div class="w-[100%] border-1 border-gray-300 bg-[#ffffff] flex items-center justify-center py-2 rounded-lg"><button><i class="fa-regular fa-copy"></i> Copy</button>
+                    <div id="brac-copy-btn" class="copy-buttons w-[100%] border-1 border-gray-300 bg-[#ffffff] flex items-center justify-center py-2 rounded-lg"><button><i class="fa-regular fa-copy"></i> Copy</button>
                     </div>
 
                     <div id="brac-h-button" class=" bg-[#00a63e]  w-[100%] flex items-center justify-center  py-2 text-white rounded-lg">
@@ -251,12 +252,12 @@
                 <div>
                     <h1 class="font-bold pt-3 sm:text-[20px]">Bangladesh RailWay Helpline</h1>
                     <p id="bd-railway" class=" pb-6 text-[18px]">Bangladesh Railway</p>
-                    <p id="bd-railway-Number" class="font-bold sm:text-[32px]">163</p>
+                    <p id="bd-railway-Number" class="service-number font-bold sm:text-[32px]">163</p>
                     <p class="bg-[#f2f2f2] p-2 w-[80px] text-center rounded-3xl mt-2 mb-5 sm:text-[18px]">Travel</p>
                 </div>
                 
                 <div class=" flex gap-2 ">
-                    <div class="w-[100%] border-1 border-gray-300 bg-[#ffffff] flex items-center justify-center py-2 rounded-lg"><button><i class="fa-regular fa-copy"></i> Copy</button>
+                    <div id="bd-rail-copy-btn" class="copy-buttons w-[100%] border-1 border-gray-300 bg-[#ffffff] flex items-center justify-center py-2 rounded-lg"><button><i class="fa-regular fa-copy"></i> Copy</button>
                     </div>
 
                     <div id="railway-button" class=" bg-[#00a63e]  w-[100%] flex items-center justify-center  py-2 text-white rounded-lg">
@@ -270,16 +271,16 @@
     <div  class="py-10 px-4 lg:mt-0 mt-10 rounded-2xl lg:w-[400px] border-green-400 bg-[#ffffff] shadow-xl">
           <div class= " flex justify-between items-center gap-[30px]">
         <div class="text-[20px] text-[#111111]"><i class="fa-regular fa-clock"></i> <span >Call history</span> </div>
-        <div>
+        <div id="clear-button">
             <button class=" bg-[#00a63e] px-[36px] py-[12px] text-white rounded-3xl ">Clear</button>
         </div>
       </div>
+
       <div id="history-container">
       </div>
        
     </div>
     </section>
-
 
     <script src="script.js"></script>
 </body> 

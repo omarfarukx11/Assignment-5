@@ -242,5 +242,87 @@ for(const history of historySection){
       </div>   
     `
     historyContainer.appendChild(div)
+
+    document.getElementById('clear-button').addEventListener('click' , function(){
+        historyContainer.innerText = ''
+    })
 }
 }
+
+
+
+// const copyElement = document.getElementById('copy')
+// let copyQuantity = parseInt(copyElement.innerText)
+// const policeServiceNumber = getInnerText('police-Number')
+// document.getElementById('police-copy-btn').addEventListener('click',function(){
+//     navigator.clipboard.writeText(policeServiceNumber)
+//     alert('number copy')
+//     copyQuantity++
+//     copyElement.innerText = copyQuantity
+
+// })
+
+
+
+const copyElement = document.getElementById('copy-quantity')
+let copyQuantity = parseInt(copyElement.innerText)
+
+document.getElementById('national-copy-button').addEventListener('click',function(){
+    navigator.clipboard.writeText(getInnerText('national-e-Number'))
+    const result = 'number copied : '+ getInnerText('national-e-Number')
+    alert(result)
+    copyQuantity++;
+    copyElement.innerText = copyQuantity;
+})
+
+document.getElementById('police-copy-btn').addEventListener('click',function(){
+    navigator.clipboard.writeText(getInnerText('police-Number'))
+    const result = 'number copied : '+ getInnerText('police-Number')
+    alert(result)
+    copyQuantity++;
+    copyElement.innerText = copyQuantity;
+})
+
+document.getElementById('fire-service-copy-btn').addEventListener('click',function(){
+    navigator.clipboard.writeText(getInnerText('fire-s-Number'))
+    const result = 'number copied : '+ getInnerText('fire-s-Number')
+    alert(result)
+    copyQuantity++;
+    copyElement.innerText = copyQuantity;
+})
+
+document.getElementById('ambulance-copy-btn').addEventListener('click',function(){
+    navigator.clipboard.writeText(getInnerText('ambulance-number'))
+    const result = 'number copied : '+ getInnerText('ambulance-number')
+    alert(result)
+    copyQuantity++;
+    copyElement.innerText = copyQuantity;
+})
+document.getElementById('women-copy-btn').addEventListener('click',function(){
+    navigator.clipboard.writeText(getInnerText('women-helpline-Number'))
+    const result = 'number copied : '+ getInnerText('women-helpline-Number')
+    alert(result)
+    copyQuantity++;
+    copyElement.innerText = copyQuantity;
+})
+document.getElementById('anti-copy-btn').addEventListener('click',function(){
+    navigator.clipboard.writeText(getInnerText('anti-corruption-Number'))
+    const result = 'number copied : '+ getInnerText('anti-corruption-Number')
+    alert(result)
+    copyQuantity++;
+    copyElement.innerText = copyQuantity;
+})
+document.getElementById('brac-copy-btn').addEventListener('click',function(){
+    navigator.clipboard.writeText(getInnerText('brac-Number'))
+    const result = 'number copied : '+ getInnerText('brac-Number')
+    alert(result)
+    copyQuantity++;
+    copyElement.innerText = copyQuantity;
+})
+document.getElementById('bd-rail-copy-btn').addEventListener('click',function(){
+    navigator.clipboard.writeText(getInnerText('bd-railway-Number'))
+    const result = 'number copied : '+ getInnerText('bd-railway-Number')
+    alert(result)
+    copyQuantity++;
+    copyElement.innerText = copyQuantity;
+})

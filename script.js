@@ -9,8 +9,8 @@ for (const love of loveIcons){
 }
 
 
-const historySection = [];
 
+const historySection = [];
 function getInnerText (id){
     const innerTextIs = document.getElementById(id).innerText
     return innerTextIs
@@ -30,7 +30,7 @@ const serviceNumber = getInnerText('national-e-Number')
 const coin = getInnerTextValue('coin')
 const newCoin = coin - 20;
 if(coin < 20){
-    alert("You Do Not Have Enough Balance. You Will Need At least 20 Coins To Make A Call")
+    alert("You do not have enough balance. you will need at least 20 coins to make a call")
     return
 }
 const result = "calling " + serviceName + " " + serviceNumber+'...'
@@ -46,14 +46,13 @@ historySection.push(history)
 historyOfCall()
 })
 
-
 document.getElementById('police-button').addEventListener('click', function(){
 const serviceName = getInnerText('police')
 const serviceNumber = getInnerText('police-Number')
 const coin = getInnerTextValue('coin')
 const newCoin = coin - 20;
 if(coin < 20){
-    alert("You Do Not Have Enough Balance. You Will Need At least 20 Coins To Make A Call")
+    alert("You do not have enough balance. you will need at least 20 coins to make a call")
     return
 }
 const result = "calling " + serviceName + " " + serviceNumber+'...'
@@ -75,8 +74,8 @@ const serviceNumber = getInnerText('fire-s-Number')
 const coin = getInnerTextValue('coin')
 const newCoin = coin - 20;
 if(coin < 20){
-    alert("You Do Not Have Enough Balance. You Will Need At least 20 Coins To Make A Call")
-    return
+  alert("You do not have enough balance. you will need at least 20 coins to make a call")
+  return;
 }
 const result = "calling " + serviceName + " " + serviceNumber+'...'
 alert(result)  
@@ -97,7 +96,7 @@ const serviceNumber = getInnerText('ambulance-number')
 const coin = getInnerTextValue('coin')
 const newCoin = coin - 20;
 if(coin < 20){
-    alert("You Do Not Have Enough Balance. You Will Need At least 20 Coins To Make A Call")
+ alert("You do not have enough balance. you will need at least 20 coins to make a call")
     return
 }
 const result = "calling " + serviceName + " " + serviceNumber+'...'
@@ -119,7 +118,7 @@ const serviceNumber = getInnerText('women-helpline-Number')
 const coin = getInnerTextValue('coin')
 const newCoin = coin - 20;
 if(coin < 20){
-    alert("You Do Not Have Enough Balance. You Will Need At least 20 Coins To Make A Call")
+     alert("You do not have enough balance. you will need at least 20 coins to make a call")
     return
 }
 const result = "calling " + serviceName + " " + serviceNumber+'...'
@@ -141,7 +140,7 @@ const serviceNumber = getInnerText('anti-corruption-Number')
 const coin = getInnerTextValue('coin')
 const newCoin = coin - 20;
 if(coin < 20){
-    alert("You Do Not Have Enough Balance. You Will Need At least 20 Coins To Make A Call")
+     alert("You do not have enough balance. you will need at least 20 coins to make a call")
     return
 }
 const result = "calling " + serviceName + " " + serviceNumber+'...'
@@ -163,7 +162,7 @@ const serviceNumber = getInnerText('electricity-helpline-Number')
 const coin = getInnerTextValue('coin')
 const newCoin = coin - 20;
 if(coin < 20){
-    alert("You Do Not Have Enough Balance. You Will Need At least 20 Coins To Make A Call")
+     alert("You do not have enough balance. you will need at least 20 coins to make a call")
     return
 }
 const result = "calling " + serviceName + " " + serviceNumber+'...'
@@ -185,7 +184,7 @@ const serviceNumber = getInnerText('brac-Number')
 const coin = getInnerTextValue('coin')
 const newCoin = coin - 20;
 if(coin < 20){
-    alert("You Do Not Have Enough Balance. You Will Need At least 20 Coins To Make A Call")
+     alert("You do not have enough balance. you will need at least 20 coins to make a call")
     return
 }
 const result = "calling " + serviceName + " " + serviceNumber+'...'
@@ -207,7 +206,7 @@ const serviceNumber = getInnerText('bd-railway-Number')
 const coin = getInnerTextValue('coin')
 const newCoin = coin - 20;
 if(coin < 20){
-    alert("You Do Not Have Enough Balance. You Will Need At least 20 Coins To Make A Call")
+   alert("You do not have enough balance. you will need at least 20 coins to make a call")
     return
 }
 const result = "calling " + serviceName + " " + serviceNumber+'...'
@@ -222,6 +221,7 @@ const history = {
 historySection.push(history)
 historyOfCall()
 })
+
 
 
 function historyOfCall (){
@@ -242,26 +242,12 @@ for(const history of historySection){
       </div>   
     `
     historyContainer.appendChild(div)
-
     document.getElementById('clear-button').addEventListener('click' , function(){
         historyContainer.innerText = ''
+        historySection.length = 0;
     })
-}
-}
 
-
-
-// const copyElement = document.getElementById('copy')
-// let copyQuantity = parseInt(copyElement.innerText)
-// const policeServiceNumber = getInnerText('police-Number')
-// document.getElementById('police-copy-btn').addEventListener('click',function(){
-//     navigator.clipboard.writeText(policeServiceNumber)
-//     alert('number copy')
-//     copyQuantity++
-//     copyElement.innerText = copyQuantity
-
-// })
-
+}}
 
 
 const copyElement = document.getElementById('copy-quantity')

@@ -3,12 +3,10 @@ const loveQuantityElement = document.getElementById('love-quantity')
 let loveQuantity = parseInt(loveQuantityElement.innerText)
 for (const love of loveIcons){
     love.addEventListener('click', function(){
-        const newQuantity = loveQuantity++;
+        const newQuantity = ++loveQuantity;
         loveQuantityElement.innerText = newQuantity
     })
 }
-
-
 
 const historySection = [];
 function getInnerText (id){
@@ -25,6 +23,7 @@ function setInnerText (value){
 }
 
 document.getElementById('national-e-button').addEventListener('click', function(){
+const serviceTitle = getInnerText('national-title')
 const serviceName = getInnerText('national-emergency')
 const serviceNumber = getInnerText('national-e-Number')
 const coin = getInnerTextValue('coin')
@@ -38,7 +37,7 @@ alert(result)
 setInnerText(newCoin)
 
 const history = {
-    serviceName: serviceName,
+    serviceTitle: serviceTitle,
     serviceNumber:serviceNumber,
     date:new Date().toLocaleTimeString()
 }
@@ -47,6 +46,7 @@ historyOfCall()
 })
 
 document.getElementById('police-button').addEventListener('click', function(){
+const serviceTitle = getInnerText('police-title')
 const serviceName = getInnerText('police')
 const serviceNumber = getInnerText('police-Number')
 const coin = getInnerTextValue('coin')
@@ -60,7 +60,7 @@ alert(result)
 setInnerText(newCoin)
 
 const history = {
-    serviceName: serviceName,
+    serviceTitle: serviceTitle,
     serviceNumber:serviceNumber,
     date:new Date().toLocaleTimeString()
 }
@@ -69,6 +69,7 @@ historyOfCall()
 })
 
 document.getElementById('fire-s-button').addEventListener('click', function(){
+const serviceTitle = getInnerText('fire-title')
 const serviceName = getInnerText('fire-service')
 const serviceNumber = getInnerText('fire-s-Number')
 const coin = getInnerTextValue('coin')
@@ -82,7 +83,7 @@ alert(result)
 setInnerText(newCoin)
 
 const history = {
-    serviceName: serviceName,
+    serviceTitle: serviceTitle,
     serviceNumber:serviceNumber,
     date:new Date().toLocaleTimeString()
 }
@@ -91,6 +92,7 @@ historyOfCall()
 })
 
 document.getElementById('ambulance-button').addEventListener('click', function(){
+const serviceTitle = getInnerText('ambulance-title')
 const serviceName = getInnerText('ambulance-service')
 const serviceNumber = getInnerText('ambulance-number')
 const coin = getInnerTextValue('coin')
@@ -104,7 +106,7 @@ alert(result)
 setInnerText(newCoin)
 
 const history = {
-    serviceName: serviceName,
+    serviceTitle: serviceTitle,
     serviceNumber:serviceNumber,
     date:new Date().toLocaleTimeString()
 }
@@ -113,6 +115,7 @@ historyOfCall()
 })
 
 document.getElementById('women-button').addEventListener('click', function(){
+const serviceTitle = getInnerText('women-title')
 const serviceName = getInnerText('women-helpline')
 const serviceNumber = getInnerText('women-helpline-Number')
 const coin = getInnerTextValue('coin')
@@ -126,7 +129,7 @@ alert(result)
 setInnerText(newCoin)
 
 const history = {
-    serviceName: serviceName,
+    serviceTitle: serviceTitle,
     serviceNumber:serviceNumber,
     date:new Date().toLocaleTimeString()
 }
@@ -135,6 +138,7 @@ historyOfCall()
 })
 
 document.getElementById('anti-corruption-button').addEventListener('click', function(){
+const serviceTitle = getInnerText('anti-title')
 const serviceName = getInnerText('anti-corruption')
 const serviceNumber = getInnerText('anti-corruption-Number')
 const coin = getInnerTextValue('coin')
@@ -148,7 +152,7 @@ alert(result)
 setInnerText(newCoin)
 
 const history = {
-    serviceName: serviceName,
+    serviceTitle: serviceTitle,
     serviceNumber:serviceNumber,
     date:new Date().toLocaleTimeString()
 }
@@ -157,6 +161,7 @@ historyOfCall()
 })
 
 document.getElementById('electricity-h-button').addEventListener('click', function(){
+const serviceTitle = getInnerText('electricity-title')
 const serviceName = getInnerText('electricity-helpline')
 const serviceNumber = getInnerText('electricity-helpline-Number')
 const coin = getInnerTextValue('coin')
@@ -170,7 +175,7 @@ alert(result)
 setInnerText(newCoin)
 
 const history = {
-    serviceName: serviceName,
+    serviceTitle: serviceTitle,
     serviceNumber:serviceNumber,
     date:new Date().toLocaleTimeString()
 }
@@ -179,6 +184,7 @@ historyOfCall()
 })
 
 document.getElementById('brac-h-button').addEventListener('click', function(){
+const serviceTitle = getInnerText('barc-title')
 const serviceName = getInnerText('brac')
 const serviceNumber = getInnerText('brac-Number')
 const coin = getInnerTextValue('coin')
@@ -192,7 +198,7 @@ alert(result)
 setInnerText(newCoin)
 
 const history = {
-    serviceName: serviceName,
+    serviceTitle: serviceTitle,
     serviceNumber:serviceNumber,
     date:new Date().toLocaleTimeString()
 }
@@ -200,7 +206,9 @@ historySection.push(history)
 historyOfCall()
 })
 
+
 document.getElementById('railway-button').addEventListener('click', function(){
+const serviceTitle = getInnerText('railway-title')
 const serviceName = getInnerText('bd-railway')
 const serviceNumber = getInnerText('bd-railway-Number')
 const coin = getInnerTextValue('coin')
@@ -214,7 +222,7 @@ alert(result)
 setInnerText(newCoin)
 
 const history = {
-    serviceName: serviceName,
+    serviceTitle: serviceTitle,
     serviceNumber:serviceNumber,
     date:new Date().toLocaleTimeString()
 }
@@ -233,7 +241,7 @@ for(const history of historySection){
     div.innerHTML = `
     <div class="p-3 text-[18px] rounded-2xl flex justify-between items-center bg-[#fafafa] my-4">
         <div class="text-[14px] sm:text-[18px]">
-            <h1 class=" font-semibold text-[#111111]">${history.serviceName}</h1>
+            <h1 class=" font-semibold text-[#111111]">${history.serviceTitle}</h1>
             <p>${history.serviceNumber}</p>
         </div>
         <div class="text-[14px sm:text-[18px]">
